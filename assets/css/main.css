@@ -1,7 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,600,600italic,700");
 @import url("fontawesome-all.min.css");
 
-
+/*
+	Miniport by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
 
 html,
 body,
@@ -276,15 +280,13 @@ h1 {
   font-weight: 300;
 }
 
-/* h1 strong {
+h1 strong {
   font-weight: 700;
-} */
+}
 
 h2 {
-  font-size: 1.5em;
+  font-size: 2em;
   letter-spacing: -0.015em;
-  color: rgb(127, 123, 123);
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 h3 {
@@ -341,21 +343,17 @@ footer>p {
   margin: 0 auto;
   max-width: calc(100% - 50px);
   width: 1200px;
-
 }
 
 .container.medium {
   width: 900px;
 }
 
-#portfolio {
-  padding: 2%;
-}
-
 @media screen and (max-width: 1680px) {
 
   .container {
     width: 1200px;
+    font-family: auto;
   }
 
   .container.medium {
@@ -364,23 +362,21 @@ footer>p {
 
 }
 
+.pic {
+  width: 150px;
+  height: 200px;
+}
+
 @media screen and (max-width: 1280px) {
 
   .container {
     width: 960px;
+    font-family: auto;
   }
 
   .container.medium {
     width: 720px;
   }
-
-  .image img {
-    display: block;
-    width: 75%;
-    margin: auto;
-    padding: 15em 0
-  }
-
 
 }
 
@@ -388,6 +384,7 @@ footer>p {
 
   .container {
     width: 100%;
+    font-family: auto;
   }
 
   .container.medium {
@@ -401,6 +398,7 @@ footer>p {
   .container {
     width: 100%;
     max-width: calc(100% - 30px);
+    font-family: auto;
   }
 
   .container.medium {
@@ -1140,10 +1138,6 @@ footer>p {
     padding-top: 50px;
   }
 
-  #top {
-    padding: 15em 0;
-  }
-
 }
 
 @media screen and (max-width: 980px) {
@@ -1388,12 +1382,6 @@ footer>p {
   .row.gtr-200.gtr-uniform>* {
     padding-top: 50px;
   }
-
-}
-
-.pic {
-
-  height: 15em;
 
 }
 
@@ -1763,15 +1751,12 @@ article:last-child {
 .image {
   display: inline-block;
   position: relative;
-  width: 20em;
-  height: 20em;
 }
-
-
 
 .image img {
   display: block;
-  width: 75%;
+  width: 100%;
+  margin: auto;
 }
 
 .image.fit {
@@ -1783,7 +1768,6 @@ article:last-child {
   display: block;
   width: 100%;
   margin: 0 0 2em 0;
-
 }
 
 .image.left {
@@ -1829,7 +1813,7 @@ button,
   text-shadow: -1px -1px 0.5px rgba(0, 0, 0, 0.5);
   overflow: hidden;
   box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.5), inset 0px 2px 1px 0px rgba(255, 255, 255, 0.75);
-  background-color: #f7b3b3;
+  background-color: #43B3E0;
   padding: 1em 2.35em 1em 2.35em;
   font-size: 1.1em;
   max-width: 24em;
@@ -2144,8 +2128,6 @@ ul.actions li:first-child {
 .wrapper.style2 {
   background-color: #fafafa;
   text-shadow: 1px 1px 0px #fff;
-
-
 }
 
 .wrapper.style3 {
@@ -2261,22 +2243,16 @@ body>article {
 
 #top .image {
   border-radius: 100%;
-
+  width: 20em;
+  height: 20em;
   margin: 0;
 }
 
 #top .image img {
   border-radius: 100%;
-
 }
 
 #top h1 {
-
-
-
-
-
-
   margin-top: 0.35em;
 }
 
@@ -2339,6 +2315,7 @@ body>article {
 
   body {
     font-size: 11pt;
+
   }
 
   input,
@@ -2366,22 +2343,18 @@ body>article {
   /* Articles */
 
   #top {
-    padding: 15em 0;
+    padding: 8em 0;
   }
 
   #top .image {
     width: 24em;
-    height: 2em;
-    margin: 100%;
+    height: 24em;
+    padding: 10%;
+
 
   }
 
-  .image img {
-    display: block;
-    width: 50%;
-    margin: auto;
 
-  }
 
 }
 
@@ -2398,13 +2371,7 @@ body>article {
 
   #top .image {
     margin: 0 auto 2em auto;
-
-  }
-
-  .image img {
-    display: block;
-    width: 75%;
-    margin: auto;
+    padding: 10%;
   }
 
 }
@@ -2595,6 +2562,7 @@ body>article {
     width: 15em;
     height: 15em;
     margin-bottom: 0;
+    padding: 10%;
   }
 
   #top p {
@@ -2605,11 +2573,36 @@ body>article {
     margin: 0;
   }
 
-  .image img {
-    display: block;
-    width: 75%;
-    margin: auto;
+  /* Copyright */
+
+  #copyright {
+    font-size: 1em;
+    margin: 0;
   }
+
+  #copyright li {
+    display: block;
+    margin: 1em 0 0 0;
+    padding: 0;
+    box-shadow: none;
+    border-left: 0;
+  }
+
+  #copyright li:first-child {
+    margin-top: 0;
+  }
+
 }
 
-@media screen and (max-width: 736px) {}
+@media screen and (max-width: 360px) {
+  #top .image {
+    width: 15em;
+    height: 15em;
+    margin-bottom: 0;
+    padding: 15%;
+  }
+
+  .container {
+    font-size: xx-small;
+  }
+}
